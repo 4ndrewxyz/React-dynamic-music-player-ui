@@ -86,13 +86,3 @@ The player is fully responsive and adapts to different screen sizes:
 - Offline mode with cached songs
 - Additional animation themes
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgements
-
-- [Create React App](https://create-react-app.dev/) for bootstrapping the project
-- [Unsplash](https://unsplash.com) for placeholder album art (if applicable)
-- [Framer Motion Examples](https://www.framer.com/motion/examples/) for animation inspiration
-- [Android 13 Design System](https://material.io/blog/android-13-beta) for UI inspiration
