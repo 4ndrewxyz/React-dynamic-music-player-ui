@@ -1,6 +1,6 @@
 # Animated Music Player with Dynamic Visuals
 
-![Music Player Preview](https://via.placeholder.com/800x400?text=Music+Player+Preview)
+![Description](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWc1cHhscGp6ZnlnaGlwdWZwcm00ZXBlY3Y4aGMxYmNhc242OHAwbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IT2Oo3Iba8UOB4itLs/giphy.gif)
 
 An interactive, animated music player featuring dynamic visuals that adapt to your music. This project creates a visually stunning music playback experience with color extraction from album art, lava lamp-style animations, and playful interactive elements.
 
@@ -21,12 +21,6 @@ An interactive, animated music player featuring dynamic visuals that adapt to yo
 - **[React Icons](https://react-icons.github.io/react-icons/)** - Icon library for UI elements
 - **[Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)** - Audio processing and playback management
 - **[SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)** - Vector graphics for squiggly animations and visual effects
-
-## 📷 Screenshots
-
-<div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
-  <img src="[https://via.placeholder.com/400x300?text=Animation+Demo](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWc1cHhscGp6ZnlnaGlwdWZwcm00ZXBlY3Y4aGMxYmNhc242OHAwbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IT2Oo3Iba8UOB4itLs/giphy.gif)" width="400" alt="Animation Demo" />
-</div>
 
 ## 🚀 Getting Started
 
