@@ -1,0 +1,158 @@
+/* Modern player styling */
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #f5f5f7;
+  --text-primary: #1d1d1f;
+  --text-secondary: #86868b;
+  --accent-color: #0071e3;
+  
+  /* Colors from album art (will be set dynamically) */
+  --color-primary: #1d1d1f;
+  --color-secondary: #86868b;
+}
+
+/* Update the player container styling */
+.player-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Change from flex-start to center */
+  padding: 0; /* Remove padding-left */
+  position: relative;
+  z-index: 5;
+}
+
+/* Add more responsive styling to ensure centering on all screens */
+.music-player {
+  width: 450px; /* Maintain fixed width */
+  max-width: 90vw; /* But ensure it doesn't overflow on small screens */
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25), 
+  0 0 30px rgba(var(--dynamic-glow-color, 255, 100, 100), 100);
+  transition: box-shadow 1s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+
+.album-cover {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.album-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.player-controls {
+  padding: 25px 30px;
+}
+
+.track-info {
+  margin-bottom: 20px;
+}
+
+.track-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.track-artist {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.progress-container {
+  margin-bottom: 25px;
+}
+
+.progress-bar {
+  height: 5px;
+  background-color: #e1e1e1;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.progress {
+  height: 100%;
+  background-color: var(--accent-color);
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.1s linear;
+}
+
+.time-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.control-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+}
+
+.control-button:hover {
+  color: var(--accent-color);
+}
+
+.play-button {
+  width: 55px;
+  height: 55px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.play-button:hover {
+  background-color: #e8e8e8;
+  transform: scale(1.05);
+}
+
+.play-button:active {
+  transform: scale(0.95);
+}
+
+.control-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.play-button svg {
+  width: 30px;
+  height: 30px;
+}
+

@@ -1,0 +1,132 @@
+.lava-lamp-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 3; /* Between background and player */
+    pointer-events: none; /* Allow clicks to pass through */
+  }
+  
+  .blob-filters {
+    position: absolute;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  
+  .lava-blob {
+    position: absolute;
+    border-radius: 50%;
+    will-change: transform, border-radius, opacity;
+    backface-visibility: hidden;
+    perspective: 1000;
+    transform: translateZ(0);
+    transform-style: preserve-3d;
+    pointer-events: none;
+    mix-blend-mode: screen;
+  }
+  
+  /* Base blobs that mostly stay at the bottom */
+  .base-blob {
+    width: 300px;
+    height: 300px;
+    top: 80vh;
+    opacity: 0.7;
+    filter: blur(7px); /* Removed SVG filter */
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Main rising and falling blobs */
+  .large-blob {
+    width: 250px;
+    height: 250px;
+    top: 80vh;
+    opacity: 0.75;
+    filter: blur(5px); /* Removed SVG filter */
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Medium-sized blobs that break off */
+  .medium-blob {
+    width: 150px;
+    height: 150px;
+    top: 75vh;
+    opacity: 0.8;
+    filter: blur(4px); /* Removed SVG filter */
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Small bubble blobs */
+  .bubble-blob {
+    width: 40px;
+    height: 40px;
+    top: 90vh;
+    opacity: 0.9;
+    filter: blur(2px); /* Removed SVG filter */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Tiny bubbles */
+  .tiny-blob {
+    width: 20px;
+    height: 20px;
+    top: 85vh;
+    opacity: 0.7;
+    filter: blur(1px); /* Removed SVG filter */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+  
+  /* Add subtle reflection effect to larger blobs - using pseudo-element which is more performant */
+  .large-blob::after,
+  .medium-blob::after,
+  .base-blob::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    filter: blur(3px);
+  }
+  
+  /* Responsive scaling */
+  @media (max-width: 768px) {
+    .base-blob {
+      width: 200px;
+      height: 200px;
+      top: 85vh;
+      filter: blur(5px);
+    }
+    
+    .large-blob {
+      width: 150px;
+      height: 150px;
+      top: 80vh;
+      filter: blur(4px);
+    }
+    
+    .medium-blob {
+      width: 100px;
+      height: 100px;
+      top: 75vh;
+      filter: blur(3px);
+    }
+    
+    .bubble-blob {
+      width: 25px;
+      height: 25px;
+      top: 90vh;
+      filter: blur(1px);
+    }
+    
+    .tiny-blob {
+      width: 12px;
+      height: 12px;
+      top: 85vh;
+      filter: blur(0.5px);
+    }
+  }
