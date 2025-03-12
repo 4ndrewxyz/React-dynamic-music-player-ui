@@ -25,9 +25,7 @@ An interactive, animated music player featuring dynamic visuals that adapt to yo
 ## 📷 Screenshots
 
 <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
-  <img src="https://via.placeholder.com/300x600?text=Mobile+View" width="300" alt="Mobile View" />
-  <img src="https://via.placeholder.com/600x400?text=Desktop+View" width="400" alt="Desktop View" />
-  <img src="https://via.placeholder.com/400x300?text=Animation+Demo" width="400" alt="Animation Demo" />
+  <img src="[https://via.placeholder.com/400x300?text=Animation+Demo](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWc1cHhscGp6ZnlnaGlwdWZwcm00ZXBlY3Y4aGMxYmNhc242OHAwbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IT2Oo3Iba8UOB4itLs/giphy.gif)" width="400" alt="Animation Demo" />
 </div>
 
 ## 🚀 Getting Started
